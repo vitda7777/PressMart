@@ -226,6 +226,7 @@ body{
     height: 100%;
     background-color: rosybrown;
     border-radius: 10px;
+    
     position: relative;
     & img{
 
@@ -268,158 +269,404 @@ body{
 }
 .my-section .block2{
     width: 50%;
-    height: 100%;
+    height: 105%;
     display: grid;
     grid-template-columns: repeat(2,auto);
     justify-content: center;
     align-items: center;
     align-content: center;
     gap: 30px;
+    
     & .item{
-        width: 320px;
-        height: 240px;
-        background-color: burlywood;
+        top: 0;
+        width: 335px;
+        height: 290px;
+        background-color: brown;
         border-radius: 10px;
-
     }
     & .item:nth-child(1){
         position: relative;
+        height: 200px;
         & .text-contain{
             position: absolute;
-            top: 7px;
-            left: 7px;
+            top: 7%;
+            left: 5%;
             width: auto;
             height: auto;
-            & h4{
-                width: 70px;
-                text-align: center;
-                padding-top: 5px;
-                padding-bottom: 10px;
-                color:rgb(253, 253, 253)
-               
+        }
+        & h4{
+            background-color: rgb(0, 110, 255);
+            width: 70px;
+            text-align: center;
+            height: 30px;
+            padding-top: 5px;
+            color: rgb(248, 246, 246);
+            padding-bottom: 10px;
+        }
+        & h1{
+            margin-top: 10px;
+            font-size: 30px;
+            color: rgb(13, 13, 13);
+            font-weight: 800;
+            padding-bottom: 20px;
+        }
+        & button{
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            border-radius: 18px;
+            color: rgb(69, 50, 50);
+        }
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    & .item:nth-child(2){
+        position: relative;
+        height: 200px;
+        & .text-contain{
+            position: absolute;
+            top: 7%;
+            left: 5%;
+            width: auto;
+            height: auto;
+        }
+        & h4{
+            background-color: rgb(0, 110, 255);
+            width: 70px;
+            text-align: center;
+            height: 30px;
+            padding-top: 5px;
+            color: white;
+            padding-bottom: 10px;
+        }
+        & h1{
+            margin-top: 10px;
+            font-size: 30px;
+            color: white;
+            font-weight: 800;
+            padding-bottom: 20px;
+        }
+        & p{
+            color: grey;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        & button{
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            border-radius: 18px;
+            color: white;
+        }
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    & .item:nth-child(3){
+        width: 700px;
+        height: 220px;
+        bottom: 20px;
+        background-color: greenyellow;
+        grid-column: span 2;
+        position: relative;
+        & .text-contain{
+            position: absolute;
+            top: 7%;
+            left: 5%;
+            width: auto;
+            height: auto;
+        }
+        & h4{
+            height: 30px;
+            padding-top: 5px;
+            color: white;
+            padding-bottom: 10px;
+        }
+        & h1{
+            margin-top: 10px;
+            font-size: 30px;
+            color: white;
+            font-weight: 800;
+            padding-bottom: 20px;
+        }
+        & p{
+            color: grey;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        & button{
+            margin-top: 25px;
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            border-radius: 18px;
+            color: white;
+        }
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+}
+
+.Products .item{
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding-bottom: 30px;
+    grid-template-columns: repeat(5,auto);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    & .card{
+        position: relative;
+        width: 260px;
+        height: 350px;
+        padding: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        transition: 0.3s all;
+        & img{
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+        }
+        & p{
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+        & h5{
+            padding-bottom: 8px;
+            font-weight: 500;
+        }
+        & .star{
+            width: 100%;
+            height: auto;
+            display: flex;
+            gap: 5px;
+            & #icon{
+                color: orange;
             }
-            & h1{
-                margin-top: 10px;
-                color: wheat;
-                font-weight: 800;
-                font-size: 45px;
-                padding-bottom: 20px;
-            }
+        }
+        & .dis{
+            transition: 0.3s all;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 2%;
+            display: none;
             & p{
-                color: gray;
-                font-size: 25px;
-                padding-bottom: 10px;
-            }
-            & button{
-                border: none;
-                background-color: transparent;
-                font-size: 16px;
-                border-radius: 18px;
-                color: wheat;
-
-            }
-            & img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
+                width: 70px;
+                height: 25px;
+                background-color: green;
+                font-size: 15px;
+                padding-top: 4px;
+                color: white;
+                text-align: center;
             }
         }
-        & .item:nth-child(2){
-            position: relative;
-            & .text-contain{
-                position: absolute;
-                top: 7px;
-                left: 7px;
-                height: auto;
-                width: auto;
-                & h4{
-                    background-color: rgb(0, 110,255);
-                    width: 70%;
-                    text-align: center;
-                    height: 30px;
-                    padding-top: 5px;
-                    color: wheat;
-                    padding-bottom: 10px;
-                }
-                & h1{
-                    margin-top: 10px;
-                    font-size: 30px;
-                    color: wheat;
-                    font-weight: 800;
-                    padding-bottom: 20px;
-                }
-                & p{
-                    color: gray;
-                    font-size: 30px;
-                    padding-bottom: 20px;
-                }
-                & button{
-                    border: none;
-                    background-color: transparent;
-                    font-size: 16px;
-                    border-radius: 18px;
-                    color: wheat;
-                }
-            }
-            & img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-
+    }
+    & .card:hover{
+        transition: 0.3 all;
+        & .dis{
+            display: block;
         }
-        &.iteam:nth-child(3){
-            width: 680px;
-            background-color: greenyellow;
-            grid-template-columns: span 2;
-            position: relative;
-            & .text-contain{
-                position:absolute;
-                top: 7%;
-                left: 7%;
-                width: auto;
-                height: auto;
-                & h4{
+    }
+}
+.my-section2{
+    width: 70%;
+    height: 40vh;
+    
+    margin: auto;
+    gap: 30px;
+    display: flex;
+     
+}
+.my-section2 .blok1{
+    width: 50%;
+    height: 100%;
+    background-color: brown;
+    border-radius: 10px;
+    position: relative;
+    & img{
+        
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    & .text-contain{
+        width: auto;
+        height: auto;
+        text-align: end;
+        position: absolute;
+        top: 10%;
+        left: 8%;
+        & h4{
+            font-size: 25px;
+            color: rgb(0, 110, 255);
+            padding-bottom: 10px;
+        }
+        & h1{
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        & p{
+            color: grey;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        & button{
+            padding: 10px 20px;
+            background-color: bisque;
+            font-size: 16px;
+            border-radius: 18px;
+            margin-top: 20px;
+        }
+    }
+
+}
+.my-section2 .blok2{
+    width: 50%;
+    height: 100%;
+    background-color: palevioletred;
+    border-radius: 10px;
+    position: relative;
+    & img{
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    & .text-contain{
+        width: auto;
+        height: auto;
+        text-align: end;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        & h4{
+            
+            font-size: 25px;
+            color: rgb(0, 110, 255);
+            padding-bottom: 10px;
+        }
+        & h1{
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        & p{
+            color: grey;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        & button{
+            padding: 10px 20px;
+            background-color: bisque;
+            font-size: 16px;
+            border-radius: 18px;
+            margin-top: 20px;
+        }
+    }
+
+}
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    & .block-address{
+        width: 30%;
+        height: auto;
+        & h3{
+            color: white;
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        & p{
+            color: white;
+            padding-bottom: 20px;
+        }
+    }
+    & .block-contact{
+        width: 20%;
+        height: auto;
+        & h3{
+            color: white;
+            font-size: 25px;
+            padding-bottom: 40px;
+        }
+        & ul{
+            display: flex;
+            gap: 15px;
+            & li{
+                list-style: none;
+                padding-bottom: 35px;
+            }
+            & a{
+                text-decoration: none;
+                color: black;
+                & #icon{
+                    width: 30px;
                     height: 30px;
-                    padding-top:10px ;
-                    color: wheat;
-                    padding-bottom: 10px;
+                    background-color: white;
+                    place-content: center;
+                    border-radius: 50%;
+                    transition: 0.2s all;
                 }
-                & h1{
-                    margin-top: 19px;
-                    font-size: 30px;
-                    color: wheat;
-                    font-weight: 800;
-                    padding-bottom: 20px;
-
-                }
-                & p{
-                    color: wheat;
-                    font-size: 16px;
-                    padding-bottom: 20px;
-                }
-                &button{
-                    margin-top: 25px;
-                    border: none;
-                    background-color: transparent;
-                    font-size: 16px;
-                    border-radius: 18px;
-                    color: wheat;
-                }
-                &hr{
-                    margin-top: 10px;
-                    width: 100px;
+                & #icon:hover{
+                    transition: 0.2s all;
+                    background-color: orange;
                 }
             }
-            &img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
+        }
+        & h4{
+            color: white;
+            font-size: 20px;
+        }
+    }
+    & .block-link{
+        width: auto;
+        height: auto;
+        & h3{
+            color: white;
+            font-size: 25px;
+        }
+        & ul{
+            & li{
+                margin-top: 17px;
+                list-style: none;
             }
-
+            & a{
+                text-decoration: none;
+                color: white;
+                & #icon{
+                    width: 30px;
+                    height: 30px;
+                    background-color: white;
+                    place-content: center;
+                    border-radius: 50%;
+                }
+            }
+        }
+        & h4{
+            color: white;
+            font-size: 20px;
         }
     }
 }
